@@ -1,0 +1,21 @@
+#include "stdio.h"// бібліотеки//
+#include "math.h"
+
+int main (void){//старт кода//
+int j, i, s,n , p = 0;
+float x; // в водим змінні //
+printf("vveditb naturalne chuclo n =");
+scanf("%d",&n);
+printf("vveditb chuclo  x =");
+scanf("%f",&x);
+for (i = 1; i <= n; i++)//задаєм значення 1 //
+{ 
+for (s = 1, j = 1;j <= i; j++) // задаєм значення 2 //
+{
+s += (i+j)/x;//рішення  що справа//
+}
+p += s;//відповідь яка має получитись
+}
+printf("p=%d\n", p);//вивід відповіді//
+return 0;
+}
